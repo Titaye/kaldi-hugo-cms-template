@@ -56,23 +56,23 @@ collections: # A list of collections the CMS should be able to edit
           - {label: More, name: more, widget: text, required: false}
           - {label: TrelloButton, name: trelloButton, widget: object, fields: [{label: Label, name: label, widget: string}, {label: Url, name: url, widget: string} ], required: false}
           - {label: Infos, name: infos, widget: object, fields: [{label: Title, name: title, widget: string},{label: SubTitle, name: subtitle, widget: text}, {label: Link, name: link, widget: object, fields: [{label: Url, name: url, widget: string}, {label: Label, name: label, widget: string}]}], required: false}
-  - name: "vince" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Power-up" # Used in the UI, ie.: "New Post"
-    folder: "site/content/power-up" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: Title, name: title, widget: string}
-      - {label: Type, name: type, widget: hidden, default "vince"}
-      - {label: SubType, name: subtype, widget: string}
-      - {label: Page, name: page, widget: hidden}
-      - {label: Sub_title, name: sub_title, widget: string, required: false}          
-      - {label: Header, name: header, widget: list, fields: [{label: Title, name: title, widget: string }]}
-      - {label: Emoji, name: emoji, widget: list, fields: [{label: Class, name: class, widget: string }, {label: Emoji, name: emoji, widget: string }], required: false}
-      - {label: Description, name: description, widget: text}
-      - {label: SubDescription1, name: subdescription1, widget: text, required: false}
-      - {label: SubDescription2, name: subdescription2, widget: text, required: false}
-      - {label: Features, name: features, widget: list, fields: [{label: Name, name: name, widget: string}, {label: Title, name: title, widget: string},{label: SubTitle, name: subtitle, widget: string}, {label: ImageName, name: imagename, widget: string} ]}
-      - {label: More, name: more, widget: text, required: false}
-      - {label: TrelloButton, name: trelloButton, widget: object, fields: [{label: Label, name: label, widget: string}, {label: Url, name: url, widget: string} ], required: false}
-      - {label: Infos, name: infos, widget: object, fields: [{label: Title, name: title, widget: string},{label: SubTitle, name: subtitle, widget: text}, {label: Link, name: link, widget: object, fields: [{label: Url, name: url, widget: string}, {label: Label, name: label, widget: string}]}], required: false}
+  # - name: "vince" # Used in routes, ie.: /admin/collections/:slug/edit
+  #   label: "Power-up" # Used in the UI, ie.: "New Post"
+  #   folder: "site/content/power-up" # The path to the folder where the documents are stored
+  #   create: true # Allow users to create new documents in this collection
+  #   fields: # The fields each document in this collection have
+  #     - {label: Title, name: title, widget: string}
+  #     - {label: Type, name: type, widget: hidden, default "vince"}
+  #     - {label: SubType, name: subtype, widget: string}
+  #     - {label: Page, name: page, widget: hidden}
+  #     - {label: Sub_title, name: sub_title, widget: string, required: false}          
+  #     - {label: Header, name: header, widget: list, fields: [{label: Title, name: title, widget: string }]}
+  #     - {label: Emoji, name: emoji, widget: list, fields: [{label: Class, name: class, widget: string }, {label: Emoji, name: emoji, widget: string }], required: false}
+  #     - {label: Description, name: description, widget: text}
+  #     - {label: SubDescription1, name: subdescription1, widget: text, required: false}
+  #     - {label: SubDescription2, name: subdescription2, widget: text, required: false}
+  #     - {label: Features, name: features, widget: list, fields: [{label: Name, name: name, widget: string}, {label: Title, name: title, widget: string},{label: SubTitle, name: subtitle, widget: string}, {label: ImageName, name: imagename, widget: string} ]}
+  #     - {label: More, name: more, widget: text, required: false}
+  #     - {label: TrelloButton, name: trelloButton, widget: object, fields: [{label: Label, name: label, widget: string}, {label: Url, name: url, widget: string} ], required: false}
+  #     - {label: Infos, name: infos, widget: object, fields: [{label: Title, name: title, widget: string},{label: SubTitle, name: subtitle, widget: text}, {label: Link, name: link, widget: object, fields: [{label: Url, name: url, widget: string}, {label: Label, name: label, widget: string}]}], required: false}
      
