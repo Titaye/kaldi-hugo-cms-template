@@ -1,5 +1,5 @@
 ---
-title: Our Coffee is very good
+title: "Our Coffee is very good \uD83D\uDE0B"
 type: products
 page: /products.html
 image: /img/products/jumbotron.jpg
@@ -99,6 +99,7 @@ pricing:
       plan: Custom
       price: '?'
 ---
+
 
 
 
