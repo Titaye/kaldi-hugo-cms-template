@@ -45,7 +45,9 @@
     "uncss": "^0.14.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.1",
-    "whatwg-fetch": "^1.0.0"
+    "whatwg-fetch": "^1.0.0",
+    "react": "^15.6.1",
+    "react-toolbox": "^2.0.0-beta.12"
   },
   "devDependencies": {
     "gulp-inject": "^4.2.0",
