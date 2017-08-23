@@ -1,0 +1,23 @@
+<div class="vince-cta">
+    <div>
+  <h1>
+    {{ .Params.cta.title}}&nbsp;
+    <div class="switch-feeling">
+      <span>💩</span>
+      <span>😱</span>
+      <span>😠</span>
+      <span>💀</span>
+      <span>😤</span>
+      <span>😬</span>
+    </div>
+    <span>&nbsp;?</span>
+    <br/>{{ .Params.cta.subtitle}}<br/>
+  </h1>
+  <h2>
+     {{ .Params.cta.description}}
+  </h2>
+  <a href="{{ .Params.cta.link.url}}" target="_blank" rel="noreferrer noopener" class="link link-vince">
+    <span>{{ .Params.cta.link.label}}</span>
+  </a>
+  </div>
+</div>

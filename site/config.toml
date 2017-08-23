@@ -1,3 +1,50 @@
+
 baseurl = "/"
-languageCode = "en-us"
-title = "Homepage"
+languageCode = "fr-fr"
+DefaultContentLanguage = "en"
+
+[params]
+ intercomAppId = "w3mgqeel"
+ gtmId = "GTM-M675PCZ"
+ title = "Vince + Trello"
+
+[Languages]
+[Languages.en]
+cta = { title = "Time Tracking sounds like", subtitle = "We agree.", description = "So we created Vince, and it's getting better ðŸ‘", link = { label = "More about Vince", url ="https://vince.run"}}
+footer = { year = "2017 UCAYA", 
+            whoVince = {title = "Who's Vince ?",
+                        description1 = "Vince is a new approach to project monitoring",  
+                        description2 = "Management, tracking, analyse : fing out what it can do for you.",
+                        legals = "Vince is in no way affiliated, nor associated with Trello, Inc."},
+            ourProducts = { title = "Our products",
+                        products = [{ title = "Vince", target="_blank", url = "https://vince.run"},
+                        { title = "Scrum by Vince", url = "/scrum"},
+                        { title = "Project by Vince", url = "/project"},
+                         { title = "Kanban by Vince", url = "", class="soon"},
+                         { title = "Booklet by Vince", url = "/booklet"}]},
+            getInTouch = { title = "Get in touch", 
+                        links = [{ title = "Demo", url = "https://trello.com/b/kH8vxVsY/vince-scrum-by-vince-scrum-project-management-board-inspiring-boards-%E2%9A%A1%EF%B8%8F-1-%E2%9C%8C%EF%B8%8F-%F0%9F%9A%80"},
+                        { title = "FAQ", url = "https://help.vince.run"},
+                        { title = "Contact", id="intercomLink"},
+                         { title = "hello@vince.run", url = "mailto:hello@vince.run?subject=Question ", concatTitle="true" }]}}
+
+[Languages.fr]
+cta = { title = "Le Time tracking vous fait", subtitle = "Nous aussi.", description = "Alors on a crÃ©Ã© Vince, et depuis Ã§a va mieux ðŸ‘", link = { label = "En savoir plus", url ="https://vince.run"}}
+footer = { year = "2017 UCAYA", 
+            whoVince = {title = "Qui est Vince ?",
+                        description1 = "Vince est une autre faÃ§on d'aborder le suivi de vos projets.",  
+                        description2 = "Management, tracking, analyse : dÃ©couvrez ce qu'il peut faire pour vous.",
+                        legals = "Vince n'est d'aucune maniÃ¨re affiliÃ©e, ni associÃ©e Ã  Trello, Inc."},
+            ourProducts = { title = "Nos produits",
+                        products = [{ title = "Vince", target="_blank", url = "https://vince.run"},
+                        { title = "Scrum by Vince", url = "/fr/scrum"},
+                        { title = "Project by Vince", url = "/fr/project"},
+                         { title = "Kanban by Vince", url = "", class="soon"},
+                         { title = "Booklet by Vince", url = "fr/booklet"}]},
+            getInTouch = { title = "Get in touch", 
+                        links = [{ title = "Demo", url = "https://trello.com/b/kH8vxVsY/vince-scrum-by-vince-scrum-project-management-board-inspiring-boards-%E2%9A%A1%EF%B8%8F-1-%E2%9C%8C%EF%B8%8F-%F0%9F%9A%80"},
+                        { title = "FAQ", url = "https://help.vince.run"},
+                        { title = "Contact", id="intercomLink"},
+                         { title = "hello@vince.run", url = "mailto:hello@vince.run?subject=Question ", concatTitle="true" }]}}
+
+             

@@ -1,4 +1,4 @@
-{{ partial "head" .Site }}
+{{ partial "head" . }}
 
 <div id="wrap">
     <section id="{{.Params.subtype}}">
@@ -11,11 +11,8 @@
     {{end}}
 
     {{ partial "vince-cta" .Site }}
+
     </section>
 </div>
 
-
-{{partial "vince-footer.html" .}}
-
-
-
+{{ partial "vince-footer" .}}
