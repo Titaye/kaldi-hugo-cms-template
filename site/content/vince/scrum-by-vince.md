@@ -1,5 +1,5 @@
 ---
-title: Scrum by Vince
+title: Scrum
 type: null
 subtype: sbv
 page: null
@@ -32,4 +32,5 @@ infos:
   subtitle: ' '
   title: ' '
 ---
+
 
