@@ -6,7 +6,7 @@ DefaultContentLanguage = "en"
 [params]
  intercomAppId = "w3mgqeel"
  gtmId = "GTM-M675PCZ"
- title = "Vince + Trello by Vince"
+ title = "Vince + Trello"
 
 [Languages]
 [Languages.en]
