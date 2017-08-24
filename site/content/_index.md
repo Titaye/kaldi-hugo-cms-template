@@ -4,9 +4,6 @@ subtitle:  '+ Trello'
 type: vince
 subtype: trello
 header:
-  - title: '# Using '
-  - title: Trello ?
-  - title: Us too 😍
 description: On Trello, go from 🤓 to 😎 !
 subdescription1: Discover our power-up suite to go even further
 subdescription2: in the management of your projects with Trello.
