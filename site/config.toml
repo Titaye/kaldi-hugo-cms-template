@@ -10,7 +10,7 @@ DefaultContentLanguage = "en"
 
 [Languages]
 [Languages.en]
-cta = { title = "Time Tracking sounds like", subtitle = "We agree.", description = "So we created Vince, and it's getting better ðŸ‘", link = { label = "More about Vince", url ="https://vince.run"}}
+cta = { title = "Time Tracking sounds like", subtitle = "We agree.", description = "So we created Vince, and it's getting better 👍", link = { label = "More about Vince", url ="https://vince.run"}}
 footer = { year = "2017 UCAYA", 
             whoVince = {title = "Who's Vince ?",
                         description1 = "Vince is a new approach to project monitoring",  
