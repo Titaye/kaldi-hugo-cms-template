@@ -10,6 +10,8 @@
       <p>{{ .Description }}</p>
       {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
       {{ .Content }}
+      MD
+      {{ markdownify .Params.md }}
     </div>
   </div>
 {{ partial "vince-footer" . }}
