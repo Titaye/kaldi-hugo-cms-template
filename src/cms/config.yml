@@ -70,7 +70,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Page Title", name: title, widget: string}
           - {label: Type, name: type, widget: hidden}
           - {label: SubType, name: subtype, widget: string}
-          - {label: Page, name: page, widget: hidden, default: "/index.html"}
+          - {label: Page, name: page, widget: hidden, default: "/fr/index.html"}
           - {label: Sub title, name: sub_title, widget: string, required: false}          
           - {label: Header, name: headermd, widget: "markdown"}
           - {label: Image header top, name: imageheadertop, widget: string}
