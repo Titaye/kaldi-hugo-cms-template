@@ -11,7 +11,9 @@
         {{ partial "vince-infos" . }}
     {{end}}
 
+    {{if .Params.showCTA }}
     {{ partial "vince-cta" .Site }}
+    {{end}}
 
     </section>
 </div>

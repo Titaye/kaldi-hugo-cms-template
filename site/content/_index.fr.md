@@ -43,5 +43,5 @@ buttonLinkTop:
 buttonLinkBottom:
   label: Allez à vos tableaux Trello
   url: 
-
+showCTA: true
 ---

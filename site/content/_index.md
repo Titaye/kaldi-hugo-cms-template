@@ -43,5 +43,5 @@ buttonLinkTop:
 buttonLinkBottom:
   label: 
   url: https://trello.com
-
+showCTA: true
 ---
