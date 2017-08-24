@@ -3,47 +3,45 @@ title: Vince + Trello
 subtitle:  '+ Trello'
 type: vince
 subtype: trello
-header:
-  - title: Vous utilisez 
-  - title: Trello ?
-  - title: Nous aussi 😍
-description: Sur Trello, passez de 🤓 à 😎 !
-subdescription1: Découvrez notre suite de power-up pour aller encore plus loin 
-subdescription2: dans la gestion de vos projets avec Trello.
-subdescription3: "C'est parce qu’ils nous manquaient que nous les avons créer…"
+headermd: |-
+ # Vous utilisez **Trello** ?
+ # Nous aussi 😍
+imageheadertop: /img/header-trello-top
+imageheaderbottom: /img/header-trello-bottom
+description: |-
+ # Sur Trello, passez de 🤓 à 😎 !
+ ## Découvrez notre suite de power-up pour aller encore plus loin dans la gestion de vos projets avec Trello.
+ ### C'est parce qu’ils nous manquaient que nous les avons créer…
 features:
-  - detail: true
-    name: scrum
-    title: Nous gérons des projets en Scrum
-    subtitle : avec Scrum by Vince
-    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor in Ut enim ad minim veniam. cididunt. 
-    imagename: sbv-trello
-    link:
-     label: En savoir plus
-     url: /fr/scrum
-  - detail: true
-    name: project
-    title: Nous avons plusieurs tableaux pour un client, projet… et passons notre temps à basculer entre eux
-    subtitle : avec Project by Vince
-    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor in Ut enim ad minim veniam. cididunt. 
-    imagename: project-trello
-    link:
-     label: Découvrez toutes les possibilités
-     url: /fr/project
-  - detail: true
-    name: booklet
-    title: Nous gérons et déplaçons beaucoup de cartes
-    title1: et à partir de celles-ci générons un grand nombre
-    title2: de document (release notes, Excel…)
-    subtitle : avec Booklet by Vince
-    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor in Ut enim ad minim veniam. cididunt. 
-    imagename: bbv-trello
-    link:
-     label: Découvrez toutes les possibilités
-     url: /fr/booklet
-more: Nous gérons parfois des projets en Kanban
-moredescription: Coming soon
-trelloButton:
+  - contentmd: |-
+     # Nous gérons des projets en Scrum
+     ## avec Scrum by Vince
+     ### Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor in Ut enim ad minim veniam. cididunt. 
+     [En savoir plus](scrum)
+    image: /img/sbv-trello
+  - contentmd: |-
+     # Nous avons plusieurs tableaux pour un client, projet… et passons notre temps à basculer entre eux
+     ## avec Project by Vince
+     ### Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor in Ut enim ad minim veniam. cididunt. 
+     [Découvrez toutes les possibilités](project)
+    image: /img/project-trello
+  - contentmd: |-
+     # Nous gérons et déplaçons beaucoup de cartes 
+     # et à partir de celles-ci générons un grand nombre
+     # de document (release notes, Excel…)
+     ## avec Booklet by Vince
+     ### Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor in Ut enim ad minim veniam. cididunt. 
+     [Découvrez toutes les possibilités](booklet)
+    image: /img/bbv-trello
+more: |-
+ ## Nous gérons parfois des projets en Kanban
+moredescription: |- 
+ ### Bientôt disponible
+buttonLinkTop:
   label: Allez à vos tableaux Trello
-  url: https://trello.com
+  url: 
+buttonLinkBottom:
+  label: Allez à vos tableaux Trello
+  url: 
+
 ---

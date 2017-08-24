@@ -43,21 +43,23 @@ collections: # A list of collections the CMS should be able to edit
         label: "Home Page (EN)"
         name: "Vince + Trello"
         fields:
-          - {label: Title, name: title, widget: string}
+          - {label: "Page Title", name: title, widget: string}
           - {label: Type, name: type, widget: hidden}
           - {label: SubType, name: subtype, widget: string}
           - {label: Page, name: page, widget: hidden, default: "/index.html"}
           - {label: Sub_title, name: sub_title, widget: string, required: false}          
-          - {label: Header, name: header, widget: list, fields: [{label: Title, name: title, widget: markdown }]}
+          - {label: Header, name: headermd, widget: "markdown"}
+          - {label: Image header top, name: imageheadertop, widget: string}
+          - {label: Image header bottom, name: imageheaderbottom, widget: string}
           - {label: Emoji, name: emoji, widget: list, fields: [{label: Class, name: class, widget: string }, {label: Emoji, name: emoji, widget: string }], required: false}
-          - {label: Description, name: description, widget: text}
-          - {label: SubDescription1, name: subdescription1, widget: text, required: false}
-          - {label: SubDescription2, name: subdescription2, widget: text, required: false}
-          - {label: Features, name: features, widget: list, fields: [{label: Name, name: name, widget: string}, {label: Title, name: title, widget: string},{label: SubTitle, name: subtitle, widget: string}, {label: ImageName, name: imagename, widget: string} ]}
-          - {label: More, name: more, widget: text, required: false}
-          - {label: TrelloButton, name: trelloButton, widget: object, fields: [{label: Label, name: label, widget: string}, {label: Url, name: url, widget: string} ], required: false}
-          - {label: Infos, name: infos, widget: object, fields: [{label: Title, name: title, widget: string},{label: SubTitle, name: subtitle, widget: text}, {label: Link, name: link, widget: object, fields: [{label: Url, name: url, widget: string}, {label: Label, name: label, widget: string}]}], required: false}
-          - {label: EmailSubject, name: emailsubject, widget: text, required: false}
+          - {label: Description, name: description, widget: "markdown"}
+          - {label: Features, name: features, widget: list, fields: [{label: Content, name: contentmd, widget: "markdown"},{label: ImageName, name: imagename, widget: string} ]}
+          - {label: More, name: more, widget: "markdown", required: false}
+          - {label: More Description, name: moredescription, widget:"markdown" , required: false}
+          - {label: "Button Top", name: buttonLinkTop, widget: object, fields: [{label: Label, name: label, widget: string}, {label: Url, name: url, widget: string} ], required: false}
+          - {label: "Button Bottom", name: buttonLinkBottom, widget: object, fields: [{label: Label, name: label, widget: string}, {label: Url, name: url, widget: string} ], required: false}
+          - {label: "Infos", name: infos, widget: object, fields: [{label: Title, name: title, widget: "markdown"},{label: Sub Title, name: subtitle, widget: "markdown"}, {label: Link, name: link, widget: object, fields: [{label: Url, name: url, widget: string}, {label: Label, name: label, widget: string}]}], required: false}
+          - {label: "Email subject", name: emailsubject, widget: text, required: false}
   - name: "Home FR"
     label: "Home Page (FR)"
     files:
@@ -65,63 +67,65 @@ collections: # A list of collections the CMS should be able to edit
         label: "Home Page (FR)"
         name: "Vince + Trello"
         fields:
-          - {label: Title, name: title, widget: string}
+           - {label: "Page Title", name: title, widget: string}
           - {label: Type, name: type, widget: hidden}
           - {label: SubType, name: subtype, widget: string}
-          - {label: Page, name: page, widget: hidden, default: "/fr/index.html"}
+          - {label: Page, name: page, widget: hidden, default: "/index.html"}
           - {label: Sub_title, name: sub_title, widget: string, required: false}          
-          - {label: Header, name: header, widget: list, fields: [{label: Title, name: title, widget: string }]}
+          - {label: Header, name: headermd, widget: "markdown"}
+          - {label: Image header top, name: imageheadertop, widget: string}
+          - {label: Image header bottom, name: imageheaderbottom, widget: string}
           - {label: Emoji, name: emoji, widget: list, fields: [{label: Class, name: class, widget: string }, {label: Emoji, name: emoji, widget: string }], required: false}
-          - {label: Description, name: description, widget: text}
-          - {label: SubDescription1, name: subdescription1, widget: text, required: false}
-          - {label: SubDescription2, name: subdescription2, widget: text, required: false}
-          - {label: Features, name: features, widget: list, fields: [{label: Name, name: name, widget: string}, {label: Title, name: title, widget: string},{label: SubTitle, name: subtitle, widget: string}, {label: ImageName, name: imagename, widget: string} ]}
-          - {label: More, name: more, widget: text, required: false}
-          - {label: TrelloButton, name: trelloButton, widget: object, fields: [{label: Label, name: label, widget: string}, {label: Url, name: url, widget: string} ], required: false}
-          - {label: Infos, name: infos, widget: object, fields: [{label: Title, name: title, widget: string},{label: SubTitle, name: subtitle, widget: text}, {label: Link, name: link, widget: object, fields: [{label: Url, name: url, widget: string}, {label: Label, name: label, widget: string}]}], required: false}
-          - {label: EmailSubject, name: emailsubject, widget: text, required: false}
-  - name: "Scrum EN"
-    label: "Scrum Page (EN)"
-    files:
-      - file: "site/content/scrum.md"
-        label: "Scrum Page (EN)"
-        name: "Scrum"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Type, name: type, widget: hidden, default: "vince"}
-          - {label: SubType, name: subtype, widget: string}
-          - {label: Page, name: page, widget: hidden, default: "/scrum/index.html"}
-          - {label: Sub_title, name: sub_title, widget: string, required: false}          
-          - {label: Header, name: header, widget: list, fields: [{label: Title, name: title, widget: string }]}
-          - {label: Emoji, name: emoji, widget: list, fields: [{label: Class, name: class, widget: string }, {label: Emoji, name: emoji, widget: string }], required: false}
-          - {label: Description, name: description, widget: text}
-          - {label: SubDescription1, name: subdescription1, widget: text, required: false}
-          - {label: SubDescription2, name: subdescription2, widget: text, required: false}
-          - {label: Features, name: features, widget: list, fields: [{label: Name, name: name, widget: string}, {label: Title, name: title, widget: string},{label: SubTitle, name: subtitle, widget: string}, {label: ImageName, name: imagename, widget: string} ]}
-          - {label: More, name: more, widget: text, required: false}
-          - {label: TrelloButton, name: trelloButton, widget: object, fields: [{label: Label, name: label, widget: string}, {label: Url, name: url, widget: string} ], required: false}
-          - {label: Infos, name: infos, widget: object, fields: [{label: Title, name: title, widget: string},{label: SubTitle, name: subtitle, widget: text}, {label: Link, name: link, widget: object, fields: [{label: Url, name: url, widget: string}, {label: Label, name: label, widget: string}]}], required: false}
-          - {label: EmailSubject, name: emailsubject, widget: text, required: false}
-  - name: "Scrum FR"
-    label: "Scrum Page (FR)"
-    files:
-      - file: "site/content/scrum.fr.md"
-        label: "Scrum Page (FR)"
-        name: "Scrum"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Type, name: type, widget: hidden, default: "vince"}
-          - {label: SubType, name: subtype, widget: string}
-          - {label: Page, name: page, widget: hidden, default: "/fr/scrum/index.html"}
-          - {label: Sub_title, name: sub_title, widget: string, required: false}          
-          - {label: Header, name: header, widget: list, fields: [{label: Title, name: title, widget: string }]}
-          - {label: Emoji, name: emoji, widget: list, fields: [{label: Class, name: class, widget: string }, {label: Emoji, name: emoji, widget: string }], required: false}
-          - {label: Description, name: description, widget: text}
-          - {label: SubDescription1, name: subdescription1, widget: text, required: false}
-          - {label: SubDescription2, name: subdescription2, widget: text, required: false}
-          - {label: Features, name: features, widget: list, fields: [{label: Name, name: name, widget: string}, {label: Title, name: title, widget: string},{label: SubTitle, name: subtitle, widget: string}, {label: ImageName, name: imagename, widget: string} ]}
-          - {label: More, name: more, widget: text, required: false}
-          - {label: TrelloButton, name: trelloButton, widget: object, fields: [{label: Label, name: label, widget: string}, {label: Url, name: url, widget: string} ], required: false}
-          - {label: Infos, name: infos, widget: object, fields: [{label: Title, name: title, widget: string},{label: SubTitle, name: subtitle, widget: text}, {label: Link, name: link, widget: object, fields: [{label: Url, name: url, widget: string}, {label: Label, name: label, widget: string}]}], required: false}
-          - {label: EmailSubject, name: emailsubject, widget: text, required: false}
+          - {label: Description, name: description, widget: "markdown"}
+          - {label: Features, name: features, widget: list, fields: [{label: Content, name: contentmd, widget: "markdown"},{label: ImageName, name: imagename, widget: string} ]}
+          - {label: More, name: more, widget: "markdown", required: false}
+          - {label: More Description, name: moredescription, widget:"markdown" , required: false}
+          - {label: "Button Top", name: buttonLinkTop, widget: object, fields: [{label: Label, name: label, widget: string}, {label: Url, name: url, widget: string} ], required: false}
+          - {label: "Button Bottom", name: buttonLinkBottom, widget: object, fields: [{label: Label, name: label, widget: string}, {label: Url, name: url, widget: string} ], required: false}
+          - {label: "Infos", name: infos, widget: object, fields: [{label: Title, name: title, widget: "markdown"},{label: Sub Title, name: subtitle, widget: "markdown"}, {label: Link, name: link, widget: object, fields: [{label: Url, name: url, widget: string}, {label: Label, name: label, widget: string}]}], required: false}
+          - {label: "Email subject", name: emailsubject, widget: text, required: false}
+  # - name: "Scrum EN"
+  #   label: "Scrum Page (EN)"
+  #   files:
+  #     - file: "site/content/scrum.md"
+  #       label: "Scrum Page (EN)"
+  #       name: "Scrum"
+  #       fields:
+  #         - {label: Title, name: title, widget: string}
+  #         - {label: Type, name: type, widget: hidden, default: "vince"}
+  #         - {label: SubType, name: subtype, widget: string}
+  #         - {label: Page, name: page, widget: hidden, default: "/scrum/index.html"}
+  #         - {label: Sub_title, name: sub_title, widget: string, required: false}          
+  #         - {label: Header, name: header, widget: list, fields: [{label: Title, name: title, widget: string }]}
+  #         - {label: Emoji, name: emoji, widget: list, fields: [{label: Class, name: class, widget: string }, {label: Emoji, name: emoji, widget: string }], required: false}
+  #         - {label: Description, name: description, widget: text}
+  #         - {label: SubDescription1, name: subdescription1, widget: text, required: false}
+  #         - {label: SubDescription2, name: subdescription2, widget: text, required: false}
+  #         - {label: Features, name: features, widget: list, fields: [{label: Name, name: name, widget: string}, {label: Title, name: title, widget: string},{label: SubTitle, name: subtitle, widget: string}, {label: ImageName, name: imagename, widget: string} ]}
+  #         - {label: More, name: more, widget: text, required: false}
+  #         - {label: TrelloButton, name: trelloButton, widget: object, fields: [{label: Label, name: label, widget: string}, {label: Url, name: url, widget: string} ], required: false}
+  #         - {label: Infos, name: infos, widget: object, fields: [{label: Title, name: title, widget: string},{label: SubTitle, name: subtitle, widget: text}, {label: Link, name: link, widget: object, fields: [{label: Url, name: url, widget: string}, {label: Label, name: label, widget: string}]}], required: false}
+  #         - {label: EmailSubject, name: emailsubject, widget: text, required: false}
+  # - name: "Scrum FR"
+  #   label: "Scrum Page (FR)"
+  #   files:
+  #     - file: "site/content/scrum.fr.md"
+  #       label: "Scrum Page (FR)"
+  #       name: "Scrum"
+  #       fields:
+  #         - {label: Title, name: title, widget: string}
+  #         - {label: Type, name: type, widget: hidden, default: "vince"}
+  #         - {label: SubType, name: subtype, widget: string}
+  #         - {label: Page, name: page, widget: hidden, default: "/fr/scrum/index.html"}
+  #         - {label: Sub_title, name: sub_title, widget: string, required: false}          
+  #         - {label: Header, name: header, widget: list, fields: [{label: Title, name: title, widget: string }]}
+  #         - {label: Emoji, name: emoji, widget: list, fields: [{label: Class, name: class, widget: string }, {label: Emoji, name: emoji, widget: string }], required: false}
+  #         - {label: Description, name: description, widget: text}
+  #         - {label: SubDescription1, name: subdescription1, widget: text, required: false}
+  #         - {label: SubDescription2, name: subdescription2, widget: text, required: false}
+  #         - {label: Features, name: features, widget: list, fields: [{label: Name, name: name, widget: string}, {label: Title, name: title, widget: string},{label: SubTitle, name: subtitle, widget: string}, {label: ImageName, name: imagename, widget: string} ]}
+  #         - {label: More, name: more, widget: text, required: false}
+  #         - {label: TrelloButton, name: trelloButton, widget: object, fields: [{label: Label, name: label, widget: string}, {label: Url, name: url, widget: string} ], required: false}
+  #         - {label: Infos, name: infos, widget: object, fields: [{label: Title, name: title, widget: string},{label: SubTitle, name: subtitle, widget: text}, {label: Link, name: link, widget: object, fields: [{label: Url, name: url, widget: string}, {label: Label, name: label, widget: string}]}], required: false}
+  #         - {label: EmailSubject, name: emailsubject, widget: text, required: false}
   

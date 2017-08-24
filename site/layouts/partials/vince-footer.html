@@ -39,7 +39,7 @@
     {{$emailSubject := .Params.EmailSubject}}
     <li>{{$footer.getintouch.title}}</li>
     {{range $footer.getintouch.links}}
-      <li><a {{if .url}} href="{{.url}}{{if .urlConcat }}?subject={{$emailSubject}}{{end}}" {{end}} id={{.id}} target="_blank" class={{.class}} rel="noreferrer noopener">{{.title}}</a></li>
+      <li><a {{if .url}} href="{{.url}}{{if and (.urlConcat) ($emailSubject) }}?subject={{$emailSubject}}{{end}}" {{end}} id={{.id}} target="_blank" class={{.class}} rel="noreferrer noopener">{{.title}}</a></li>
     {{end}}
   </ul>
   </ul>

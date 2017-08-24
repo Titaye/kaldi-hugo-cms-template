@@ -1,49 +1,35 @@
 <div class="content">
     {{if and (ne (.Params.SubType) "trello") (ne (.Params.SubType) "project")}}
-        <img class="trello-screenshot-bottom" id="{{.Params.SubType}}-screenshot-bottom" src="/img/header-{{.Params.SubType}}-bottom.png" 
-	    srcset="/img/header-{{.Params.SubType}}-bottomx2.png 2x, /img/header-{{.Params.SubType}}-bottomx3.png 3x">
+        <img class="trello-screenshot-bottom" id="{{.Params.SubType}}-screenshot-bottom" src="{{.Params.imageheaderbottom}}.png" 
+	    srcset="{{.Params.imageheaderbottom}}x2.png 2x, {{.Params.imageheaderbottom}}x3.png 3x">
     {{ end }}
 	{{ if .Params.Emoji }}
         <div class="{{.Params.Emoji.class}}">{{.Params.Emoji.emoji}}</div>
     {{ end }}
 
-    <h1>
-		{{.Params.Description}}
-	</h1>
-    <h2>
-        {{.Params.SubDescription1}}<br/>
-        {{.Params.SubDescription2}}
-    </h2>
-    {{ if .Params.SubDescription3 }}
-        <h3>{{.Params.SubDescription3}}</h3>
-    {{end}}
+    <div class="content-description">
+        {{markdownify .Params.Description}}
+    </div>
+	
     
     {{ if .Params.features }}
     <div class="timeline-content">
         {{ range .Params.features }}
         <div class="panel-timeline">
-            {{if .detail}}
-            <span>
-                    <h2>{{.title}}
-                        {{if .title1}}<br> {{.title1}}{{end}}
-                        {{if .title2}}<br> {{.title2}}{{end}}
-                    </h2>
-                    <span>{{.subtitle}}</span><br/>
-                    <span class="description">{{.description}}</span><br/>
-                    <a href="{{.link.url}}">{{.link.label}}</a>
-                </span>
-            {{else}}
-            <span>{{.title}}{{if .subtitle}}<br/><span>{{.subtitle}}</span>{{ end }}</span>
-            {{end}}
+            <div>
+                {{ markdownify .contentmd }}
+            </div>
 			<div>
-			    <img src="/img/{{.imagename}}.png" srcset="/img/{{.imagename}}x2.png 2x, /img/{{.imagename}}x3.png 3x">
+			    <img src="{{.image}}.png" srcset="{{.image}}x2.png 2x, {{.image}}x3.png 3x">
 			</div>
         </div>
-        {{ end }}
-        <h2>{{.Params.More}}</h2>
-        {{if .Params.MoreDescription}}
-        <span>{{.Params.MoreDescription}}</span>
-        {{end}}
+    {{ end }}
+    
+    <div class="content-more">
+    {{markdownify .Params.More}}
+    {{markdownify .Params.MoreDescription}}
+    </div>
+        
 
     </div>
     {{ end }}
@@ -54,12 +40,12 @@
         <h2>{{.Params.moreSurprises}}</h2>
         
     {{ end }}
-    {{ if eq (.Params.SubType ) "sbv" }}
+    {{ if .Params.ButtonLinkBottom.label}}
     <a {{if .Params.TrelloButton.url}} href="{{.Params.TrelloButton.url}}" {{else}}disabled{{end}}
                       rel="noreferrer noopener" class="link link-trello">
 						<svg viewBox="0 0 20 20" height="20px" width="20px" fill="#ffffff">
 						<use xlink:href="#icon-rocket"></use>
-					</svg>&nbsp;&nbsp;<span>{{.Params.TrelloButton.label}}</span>
+					</svg>&nbsp;&nbsp;<span>{{.Params.ButtonLinkBottom.label}}</span>
 					</a>
     {{ end}}
 </div>

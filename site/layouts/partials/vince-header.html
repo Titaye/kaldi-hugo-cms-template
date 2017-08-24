@@ -26,23 +26,19 @@
 					{{end}}
 					
 				</div>
-				<a {{if .Params.TrelloButton.url}} 
-					href="{{.Params.TrelloButton.url}}"
+				<a {{if .Params.ButtonLinkTop.url}} 
+					href="{{.Params.buttonLinkTop.url}}"
 					{{else}}
                     disabled
 					{{end}}
 				 rel="noreferrer noopener" class="link link-trello">
 					<svg viewBox="0 0 20 20" height="20px" width="20px" fill="#ffffff">
 						<use xlink:href="#icon-rocket"></use>
-					</svg>&nbsp;&nbsp;<span>{{.Params.TrelloButton.label}}</span>
+					</svg>&nbsp;&nbsp;<span>{{.Params.ButtonLinkTop.label}}</span>
 				</a>
-				<div>
-					<h1>
-						{{range .Params.header}}
-							<span>{{.title}}</span>
-						{{end}}
-					</h1>
-					<img class="trello-screenshot-top" alt="" id="{{.Params.SubType}}-screenshot-top" src="/img/header-{{.Params.SubType}}-top.png" 
-                    srcset="/img/header-{{.Params.SubType}}-topx2.png 2x, /img/header-{{.Params.SubType}}-topx3.png 3x">
+				<div class="highlight">
+					{{markdownify .Params.headermd }}
 				</div>
+				<img class="trello-screenshot-top" id="{{.Params.SubType}}-screenshot-top" src="{{.Params.imageheadertop}}.png" 
+				    srcset="{{.Params.imageheadertop}}x2.png 2x, {{.Params.imageheadertop}}x3.png 3x">
 			</div>
