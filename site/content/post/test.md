@@ -5,7 +5,6 @@ description:
 image: /img/images.jpg
 md: |-
   # H1
-
   ## H2
 
   **Bold**
