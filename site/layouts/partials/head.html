@@ -1,8 +1,11 @@
 <!doctype html>
-<html lang="fr">
+
+<html lang="en">
+	{{$Site := $.Param "language"}}
+	{{$footer := $.Param "footer"}}
 	<head>
 
-		<title>{{ .Title }}</title>
+		<title>{{ .Title }}{{$Site.lang}}</title>
 		<link rel="stylesheet" href="/css/main.css"/>
 
 		<meta charset="utf-8">

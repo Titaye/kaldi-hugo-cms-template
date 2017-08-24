@@ -37,4 +37,5 @@ features:
 trelloButton:
   label: See on Trello
   url: 
+emailsubject: Question Scrum by Vince
 ---
