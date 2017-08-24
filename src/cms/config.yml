@@ -22,7 +22,7 @@ collections: # A list of collections the CMS should be able to edit
   #   label: "Pages"
   #   files:
   #     - file: "site/content/products.md"
-  #       label: "Products Page"
+  #       label: "Products Page "
   #       name: "products"
   #       fields:
   #         - {label: Title, name: title, widget: string}
