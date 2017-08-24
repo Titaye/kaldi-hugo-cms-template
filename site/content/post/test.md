@@ -8,6 +8,9 @@ md: |-
 
   ## H2
 
-  NiH1NiH2
+  **Bold**
+
+  *Italic*
 ---
 # zzzzzzzzzz
+
