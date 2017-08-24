@@ -29,12 +29,12 @@ footer = { year = "2017 UCAYA",
                          { title = "hello@vince.run", url = "mailto:hello@vince.run", urlConcat="true" }]}}
 
 [Languages.fr]
-cta = { title = "Le Time tracking vous fait", subtitle = "Nous aussi.", description = "Alors on a crÃ©Ã© Vince, et depuis Ã§a va mieux ðŸ‘", link = { label = "En savoir plus", url ="https://vince.run"}}
+cta = { title = "Le Time tracking vous fait", subtitle = "Nous aussi.", description = "Alors on a créé Vince, et depuis ça va mieux 👍", link = { label = "En savoir plus", url ="https://vince.run"}}
 footer = { year = "2017 UCAYA", 
             whoVince = {title = "Qui est Vince ?",
-                        description1 = "Vince est une autre faÃ§on d'aborder le suivi de vos projets.",  
-                        description2 = "Management, tracking, analyse : dÃ©couvrez ce qu'il peut faire pour vous.",
-                        legals = "Vince n'est d'aucune maniÃ¨re affiliÃ©e, ni associÃ©e Ã  Trello, Inc."},
+                        description1 = "Vince est une autre façon d'aborder le suivi de vos projets.",  
+                        description2 = "Management, tracking, analyse : découvrez ce qu'il peut faire pour vous.",
+                        legals = "Vince n'est d'aucune manière affiliée, ni associée à Trello, Inc."},
             ourProducts = { title = "Nos produits",
                         products = [{ title = "Vince", target="_blank", url = "https://vince.run"},
                         { title = "Scrum by Vince", url = "/fr/scrum"},

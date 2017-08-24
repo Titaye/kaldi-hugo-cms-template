@@ -38,7 +38,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "Home EN"
     label: "Home Page (EN)"
     files:
-      - file: "site/content/index.md"
+      - file: "site/content/_index.md"
         label: "Home Page (EN)"
         name: "Vince + Trello"
         fields:
@@ -60,14 +60,14 @@ collections: # A list of collections the CMS should be able to edit
   - name: "Home FR"
     label: "Home Page (FR)"
     files:
-      - file: "site/content/index.fr.md"
+      - file: "site/content/_index.fr.md"
         label: "Home Page (FR)"
         name: "Vince + Trello"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Type, name: type, widget: hidden}
           - {label: SubType, name: subtype, widget: string}
-          - {label: Page, name: page, widget: hidden, default: "/index.html"}
+          - {label: Page, name: page, widget: hidden, default: "/fr/index.html"}
           - {label: Sub_title, name: sub_title, widget: string, required: false}          
           - {label: Header, name: header, widget: list, fields: [{label: Title, name: title, widget: string }]}
           - {label: Emoji, name: emoji, widget: list, fields: [{label: Class, name: class, widget: string }, {label: Emoji, name: emoji, widget: string }], required: false}
