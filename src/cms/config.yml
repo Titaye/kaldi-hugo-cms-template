@@ -41,7 +41,7 @@ collections: # A list of collections the CMS should be able to edit
     files:
       - file: "site/content/_index.md"
         label: "Home Page (EN)"
-        name: "Vince + Trello"
+        name: "Vince + Trello (EN)"
         fields:
           - {label: "Page Title", name: title, widget: string}
           - {label: Type, name: type, widget: hidden}
@@ -65,7 +65,7 @@ collections: # A list of collections the CMS should be able to edit
     files:
       - file: "site/content/_index.fr.md"
         label: "Home Page (FR)"
-        name: "Vince + Trello"
+        name: "Vince + Trello (FR)"
         fields:
           - {label: "Page Title", name: title, widget: string}
           - {label: Type, name: type, widget: hidden}
