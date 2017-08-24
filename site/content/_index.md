@@ -1,10 +1,10 @@
 ---
-title: Vince + Trello by Vince
+title: Vince + Trello
 subtitle:  '+ Trello'
 type: vince
 subtype: trello
 header:
-  - title: Using 
+  - title: '# Using '
   - title: Trello ?
   - title: Us too 😍
 description: On Trello, go from 🤓 to 😎 !

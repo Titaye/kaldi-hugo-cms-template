@@ -1,5 +1,5 @@
 ---
-title: Vince + Trello by Vince
+title: Vince + Trello
 subtitle:  '+ Trello'
 type: vince
 subtype: trello

@@ -16,6 +16,7 @@ collections: # A list of collections the CMS should be able to edit
   #     - {label: "Publish Date", name: "date", widget: "datetime"}
   #     - {label: "Intro Blurb", name: "description", widget: "text"}
   #     - {label: "Image", name: "image", widget: "image", required: false}
+  #     - {label: "MD", name: "md", widget: "markdown"}
   #     - {label: "Body", name: "body", widget: "markdown"}
   # - name: "pages"
   #   label: "Pages"
@@ -47,7 +48,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: SubType, name: subtype, widget: string}
           - {label: Page, name: page, widget: hidden, default: "/index.html"}
           - {label: Sub_title, name: sub_title, widget: string, required: false}          
-          - {label: Header, name: header, widget: list, fields: [{label: Title, name: title, widget: string }]}
+          - {label: Header, name: header, widget: list, fields: [{label: Title, name: title, widget: markdown }]}
           - {label: Emoji, name: emoji, widget: list, fields: [{label: Class, name: class, widget: string }, {label: Emoji, name: emoji, widget: string }], required: false}
           - {label: Description, name: description, widget: text}
           - {label: SubDescription1, name: subdescription1, widget: text, required: false}
