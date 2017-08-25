@@ -7,7 +7,7 @@ headermd: |-
   # **Agile workflow** ?
 imageheadertop: /img/header-sbv-top
 imageheaderbottom: /img/header-sbv-bottom
-emoji: emoji
+emoji: "\uD83D\uDC4C"
 description: |-
   # Don't change your habits, just make your life easier!
   ## Create lists, name cards, estimate your tasks … 
@@ -17,26 +17,23 @@ features:
       # Adopt a clear naming convention for your sprint boards.
       ## (❤️mojis)
     image: /img/sprint-name
-  - contentmd: |-
-      # See sprint status in the blink of an eye.
+  - contentmd: '# See sprint status in the blink of an eye.'
     image: /img/visualize
-  - contentmd: |-
-      # Track your sprint's burndown in Real Time.
+  - contentmd: '# Track your sprint''s burndown in Real Time.'
     image: /img/burndown
-  - contentmd: |-
-      # Create your Release Notes in one click.
+  - contentmd: '# Create your Release Notes in one click.'
     image: /img/releasenotes
-  - contentmd: |-
-      # Manage versioning for your completed sprints.
+  - contentmd: '# Manage versioning for your completed sprints.'
     image: /img/version
-more: |-
-moredescription: 
+more: ''
+moredescription: null
 buttonLinkTop:
   label: See on Trello
-  url: 
+  url: null
 buttonLinkBottom:
   label: See on Trello
-  url: 
+  url: null
 showCTA: true
 subtitle: Scrum
 ---
+
