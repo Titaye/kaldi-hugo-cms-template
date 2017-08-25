@@ -1,41 +1,42 @@
 ---
 title: Scrum by Vince
-subtitle: Scrum
 type: vince
 subtype: sbv
-page: /scrum/index.html
-header:
-  - title: Using 
-  - title: Trello
-  - title: for your
-  - title: Agile workflow
-  - title: '?'
-description: Don't change your habits, just make your life easier!
-subdescription1: Create lists, name cards, estimate your tasks …
-subdescription2: and go even further with Trello thanks to Scrum by Vince!
-Emoji:
- class: emoji
- emoji: 👌
+headermd: |-
+  # Using **Trello** for your
+  # **Agile workflow** ?
+imageheadertop: /img/header-sbv-top
+imageheaderbottom: /img/header-sbv-bottom
+emoji: emoji
+description: |-
+  # Don't change your habits, just make your life easier!
+  ## Create lists, name cards, estimate your tasks … 
+  ## and go even further with Trello thanks to Scrum by Vince!
 features:
-  - name: naming
-    title: Adopt a clear naming convention for your sprint boards.
-    subtitle : (❤ emojis)
-    imagename: sprint-name
-  - name: visualize
-    title: See sprint status in the blink of an eye.
-    subtitle :  
-    imagename: visualize
-  - name: velocity
-    title: Track your sprint's burndown in Real time.
-    imagename: velocity
-  - name: release
-    title: Create your Release Notes in one click.
-    imagename: releasenotes
-  - name: version
-    title: Manage versioning for your completed sprints.
-    imagename: version
-trelloButton:
+  - contentmd: |-
+      # Adopt a clear naming convention for your sprint boards.
+      ## (❤️mojis)
+    image: /img/sprint-name
+  - contentmd: |-
+      # See sprint status in the blink of an eye.
+    image: /img/visualize
+  - contentmd: |-
+      # Track your sprint's burndown in Real Time.
+    image: /img/burndown
+  - contentmd: |-
+      # Create your Release Notes in one click.
+    image: /img/releasenotes
+  - contentmd: |-
+      # Manage versioning for your completed sprints.
+    image: /img/version
+more: |-
+moredescription: 
+buttonLinkTop:
   label: See on Trello
   url: 
-emailsubject: Question Scrum by Vince
+buttonLinkBottom:
+  label: See on Trello
+  url: 
+showCTA: true
+subtitle: Scrum
 ---

@@ -1,10 +1,10 @@
 <div class="content">
-    {{if and (ne (.Params.SubType) "trello") (ne (.Params.SubType) "project")}}
+    {{if .Params.imageheaderbottom}}
         <img class="trello-screenshot-bottom" id="{{.Params.SubType}}-screenshot-bottom" src="{{.Params.imageheaderbottom}}.png" 
 	    srcset="{{.Params.imageheaderbottom}}x2.png 2x, {{.Params.imageheaderbottom}}x3.png 3x">
     {{ end }}
 	{{ if .Params.Emoji }}
-        <div class="{{.Params.Emoji.class}}">{{.Params.Emoji.emoji}}</div>
+        <div class="emoji">{{.Params.Emoji}}</div>
     {{ end }}
 
     <div class="content-description">
@@ -26,8 +26,8 @@
     {{ end }}
     
     <div class="content-more">
-    {{markdownify .Params.More}}
-    {{markdownify .Params.MoreDescription}}
+        {{markdownify .Params.More}}
+        {{markdownify .Params.MoreDescription}}
     </div>
         
 

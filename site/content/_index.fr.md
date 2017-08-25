@@ -5,11 +5,11 @@ type: vince
 subtype: trello
 headermd: |-
  # Vous utilisez **Trello** ?
- # Nous aussi 😍
+ # Nous aussi
 imageheadertop: /img/header-trello-top
 imageheaderbottom: /img/header-trello-bottom
 description: |-
- # Sur Trello, passez de 🤓 à 😎 !
+ # Sur Trello, passez de 
  ## Découvrez notre suite de power-up pour aller encore plus loin dans la gestion de vos projets avec Trello.
  ### C'est parce qu’ils nous manquaient que nous les avons créer…
 features:
