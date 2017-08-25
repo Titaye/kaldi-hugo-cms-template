@@ -7,7 +7,7 @@ headermd: |-
   # de **développement Agile** ?
 imageheadertop: /img/header-sbv-top
 imageheaderbottom: /img/header-sbv-bottom
-emoji: emoji
+emoji: 👌
 description: |-
   # Simplifiez-vous la vie sans changer vos habitudes !
   ## Créez vos listes, nommez vos cartes, estimez vos tâches...
