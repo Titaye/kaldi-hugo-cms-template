@@ -7,17 +7,17 @@ media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
 
 collections: # A list of collections the CMS should be able to edit
-  # - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
-  #   label: "Post" # Used in the UI, ie.: "New Post"
-  #   folder: "site/content/post" # The path to the folder where the documents are stored
-  #   create: true # Allow users to create new documents in this collection
-  #   fields: # The fields each document in this collection have
-  #     - {label: "Title", name: "title", widget: "string"}
-  #     - {label: "Publish Date", name: "date", widget: "datetime"}
-  #     - {label: "Intro Blurb", name: "description", widget: "text"}
-  #     - {label: "Image", name: "image", widget: "image", required: false}
-  #     - {label: "MD", name: "md", widget: "markdown"}
-  #     - {label: "Body", name: "body", widget: "markdown"}
+   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
+     label: "Post" # Used in the UI, ie.: "New Post"
+     folder: "site/content/post" # The path to the folder where the documents are stored
+     create: true # Allow users to create new documents in this collection
+     fields: # The fields each document in this collection have
+       - {label: "Title", name: "title", widget: "string"}
+       - {label: "Publish Date", name: "date", widget: "datetime"}
+       - {label: "Intro Blurb", name: "description", widget: "text"}
+       - {label: "Image", name: "image", widget: "image", required: false}
+       - {label: "MD", name: "md", widget: "markdown"}
+       - {label: "Body", name: "body", widget: "markdown"}
   # - name: "pages"
   #   label: "Pages"
   #   files:
@@ -41,7 +41,7 @@ collections: # A list of collections the CMS should be able to edit
     files:
       - file: "site/content/_index.md"
         label: "Home Page (EN)"
-        name: "Vince + Trello"
+        name: "Vince + Trello (EN)"
         fields:
           - {label: "Page Title", name: title, widget: string}
           - {label: Type, name: type, widget: hidden}
@@ -58,19 +58,19 @@ collections: # A list of collections the CMS should be able to edit
           - {label: More Description, name: moredescription, widget:"markdown" , required: false}
           - {label: Button Top, name: buttonLinkTop, widget: object, fields: [{label: Label, name: label, widget: string}, {label: Url, name: url, widget: string} ], required: false}
           - {label: Button Bottom, name: buttonLinkBottom, widget: object, fields: [{label: Label, name: label, widget: string}, {label: Url, name: url, widget: string} ], required: false}
-          - {label: "Show CTA ?", name: showCTA, widget: boolean }
+          - {label: "Show CTA ?", name: showCTA, widget: boolean}
           - {label: Email subject, name: emailsubject, widget: text, required: false}
   - name: "Home FR"
     label: "Home Page (FR)"
     files:
       - file: "site/content/_index.fr.md"
         label: "Home Page (FR)"
-        name: "Vince + Trello"
+        name: "Vince + Trello (FR)"
         fields:
           - {label: "Page Title", name: title, widget: string}
           - {label: Type, name: type, widget: hidden}
           - {label: SubType, name: subtype, widget: string}
-          - {label: Page, name: page, widget: hidden, default: "/index.html"}
+          - {label: Page, name: page, widget: hidden, default: "/fr/index.html"}
           - {label: Sub title, name: sub_title, widget: string, required: false}          
           - {label: Header, name: headermd, widget: "markdown"}
           - {label: Image header top, name: imageheadertop, widget: string}
@@ -82,7 +82,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: More Description, name: moredescription, widget:"markdown" , required: false}
           - {label: Button Top, name: buttonLinkTop, widget: object, fields: [{label: Label, name: label, widget: string}, {label: Url, name: url, widget: string} ], required: false}
           - {label: Button Bottom, name: buttonLinkBottom, widget: object, fields: [{label: Label, name: label, widget: string}, {label: Url, name: url, widget: string} ], required: false}
-          - {label: "Show CTA ?", name: showCTA, widget: boolean }
+          - {label: "Show CTA ?", name: showCTA, widget: boolean}
           - {label: Email subject, name: emailsubject, widget: text, required: false}
   # - name: "Scrum EN"
   #   label: "Scrum Page (EN)"
