@@ -7,7 +7,7 @@ headermd: |-
   # **Agile workflow** ?
 imageheadertop: /img/header-sbv-top
 imageheaderbottom: /img/header-sbv-bottom
-emoji: "\uD83D\uDC4C"
+emoji: 👌
 description: |-
   # Don't change your habits, just make your life easier!
   ## Create lists, name cards, estimate your tasks … 
