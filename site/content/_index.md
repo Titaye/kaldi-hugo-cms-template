@@ -3,8 +3,17 @@ title: Vince + Trello
 type: vince
 subtype: trello
 subtitle: + Trello
-headermd: "# Using **Trello** ?\n\n# Us too \uD83D\uDE0D\uD83D\uDE0D\uD83D\uDE0D"
-description: "# On Trello, go from \uD83E\uDD13 to \uD83D\uDE0E!\n## Discover our power-up suite to go even further in the management of your projects with Trello.\n### It is because they were missing that we created them ...\""
+headermd: |-
+  # Using **Trello** ?
+
+  # Us too 😍😍😍😍
+description: >-
+  # On Trello, go from 🤓 to 😎!
+
+  ## Discover our power-up suite to go even further in the management of your
+  projects with Trello.
+
+  ### It is because they were missing that we created them ..."
 features:
   - contentmd: >-
       # We manage projects in Scrum
@@ -65,6 +74,7 @@ buttonLinkBottom:
   url: 'https://trello.com'
 showCTA: true
 ---
+
 
 
 
